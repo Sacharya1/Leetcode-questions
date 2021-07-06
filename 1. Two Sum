@@ -5,8 +5,6 @@ class Solution:
         myDict=dict()
         
         for i in range(len(nums)):
-            #if nums[i] not in myDict:
-
             if (target-nums[i]) in myDict:
                 return [myDict[(target-nums[i])],i]
             else:
